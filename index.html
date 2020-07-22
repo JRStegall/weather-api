@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather API</title>
+    
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <h1>Weather Update</h1>
+  <section class="section">
+    <div class="container">
+        <div class="columns">
+                <div class="column is-one-third">
+                    <label for="search">Search Weather by City or Zipcode:</label>
+                        <select name="search" id="search-type">
+                            <option value="city">City</option>
+                            <option value="zipcode">Zipcode</option>
+                        </select>
+                </div>
+                <div class="column is-half">
+                    <input id="search-query" class="input" type="text" placeholder="Zipcode or City">
+                </div>
+                <div class="column">
+                    <button id="search-button" class="button is-primary">Search Weather</button>
+                </div>
+        </div>
+        <div id="myData"></div>    
+    </div>
+  </section>
+  <section class="section">
+    <div class="container" id="weatherData">
+
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+  </body>
+</html>
